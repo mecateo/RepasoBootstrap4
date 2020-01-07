@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Validacion de Formularios</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <form class="formularioValidacion" novalidate>
+      <div class="form-row">
+        <div class="col-md-4 mb-3">
+          <label for="validacionNombre">Nombre</label>
+          <input type="text" class="form-control" id="validacionNombre" placeholder="Nombre" required>
+          <div class="invalid-feedback">Rellene este campo</div>
+          <div class="valid-feedback" Campo completado></div>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

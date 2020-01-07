@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Flexbox</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <h3 class="titular">Flexbox</h3>
+    <div class="d-flex justify-content-start bg-secondary mb-3">
+      <div class="p-2 bg-info border border-secondary">flex-item</div>
+      <div class="p-2 bg-info border border-secondary">flex-item</div>
+      <div class="p-2 bg-info border border-secondary">flex-item</div>
+    </div>
+
+    <div class="d-flex justify-content-center bg-secondary mb-3">
+      <div class="p-2 bg-info border border-secondary">flex-item</div>
+      <div class="p-2 bg-info border border-secondary">flex-item</div>
+      <div class="p-2 bg-info border border-secondary">flex-item</div>
+    </div>
+
+    <div class="d-flex justify-content-between bg-secondary mb-3">
+      <div class="p-2 bg-info border border-secondary">flex-item</div>
+      <div class="p-2 bg-info border border-secondary">flex-item</div>
+      <div class="p-2 bg-info border border-secondary">flex-item</div>
+    </div>
+
+    <div class="d-flex justify-content-around bg-secondary mb-3">
+      <div class="p-2 bg-info border border-secondary">flex-item</div>
+      <div class="p-2 bg-info border border-secondary">flex-item</div>
+      <div class="p-2 bg-info border border-secondary">flex-item</div>
+    </div>
+
+    <div class="d-flex justify-content-end bg-secondary mb-3">
+      <div class="p-2 bg-info border border-secondary">flex-item</div>
+      <div class="p-2 bg-info border border-secondary">flex-item</div>
+      <div class="p-2 bg-info border border-secondary">flex-item</div>
+    </div>
+
+    <div class="row justify-content-between bg-secondary mb-3">
+      <div class="p-2 bg-info border border-secondary">flex-item</div>
+      <div class="p-2 bg-info border border-secondary">flex-item</div>
+      <div class="p-2 bg-info border border-secondary">flex-item</div>
+    </div>
+
+    <div class="d-flex bg-secondary mb-3 align-items-start" style="height: 100px;">
+      <div class="p-2 bg-info border border-secondary">flex-item</div>
+      <div class="p-2 bg-info border border-secondary">flex-item</div>
+      <div class="p-2 bg-info border border-secondary">flex-item</div>
+    </div>
+
+    <div class="d-flex bg-secondary mb-3 align-items-center" style="height: 100px;">
+      <div class="p-2 bg-info border border-secondary">flex-item</div>
+      <div class="p-2 bg-info border border-secondary">flex-item</div>
+      <div class="p-2 bg-info border border-secondary">flex-item</div>
+    </div>
+
+    <div class="d-flex bg-secondary mb-3 align-items-end" style="height: 100px;">
+      <div class="p-2 bg-info border border-secondary">flex-item</div>
+      <div class="p-2 bg-info border border-secondary">flex-item</div>
+      <div class="p-2 bg-info border border-secondary">flex-item</div>
+    </div>
+
+    <div class="d-flex bg-secondary mb-3 align-items-baseline" style="height: 100px;">
+      <div class="p-2 bg-info border border-secondary">flex-item</div>
+      <div class="p-2 bg-info border border-secondary">flex-item</div>
+      <div class="p-2 bg-info border border-secondary">flex-item</div>
+    </div>
+
+    <div class="d-flex bg-secondary mb-3" style="height: 100px;">
+      <div class="p-2 bg-info border border-secondary">flex-item</div>
+      <div class="p-2 bg-info border border-secondary align-self-start">flex-item</div>
+      <div class="p-2 bg-info border border-secondary">flex-item</div>
+    </div>
+
+    <div class="d-flex bg-secondary mb-3" style="height: 100px;">
+      <div class="p-2 bg-info border border-secondary">flex-item</div>
+      <div class="p-2 bg-info border border-secondary align-self-center">flex-item</div>
+      <div class="p-2 bg-info border border-secondary">flex-item</div>
+    </div>
+
+    <div class="d-flex bg-secondary mb-3" style="height: 100px;">
+      <div class="p-2 bg-info border border-secondary">flex-item</div>
+      <div class="p-2 bg-info border border-secondary align-self-baseline">flex-item</div>
+      <div class="p-2 bg-info border border-secondary">flex-item</div>
+    </div>
+
+    <div class="d-flex bg-secondary mb-3" style="height: 100px;">
+      <div class="p-2 bg-info border border-secondary">flex-item</div>
+      <div class="p-2 bg-info border border-secondary align-self-end">flex-item</div>
+      <div class="p-2 bg-info border border-secondary">flex-item</div>
+    </div>
+
+    <div class="d-flex bg-secondary mb-3" style="height: 100px;">
+      <div class="p-2 bg-info border border-secondary">flex-item</div>
+      <div class="p-2 bg-info border border-secondary align-self-stretch">flex-item</div>
+      <div class="p-2 bg-info border border-secondary">flex-item</div>
+    </div>
+
+    <hr>
+    <!-- Automargenes -->
+    <h2 class="text-center">Automargenes</h2>
+    <div class="d-flex bg-secondary mb-3">
+      <div class="p-2 bg-info border border-secondary">flex-item</div>
+      <div class="p-2 bg-info border border-secondary">flex-item</div>
+      <div class="p-2 bg-info border border-secondary">flex-item</div>
+    </div>
+
+    <div class="d-flex bg-secondary mb-3">
+      <div class="p-2 bg-info border border-secondary mr-auto">flex-item</div>
+      <div class="p-2 bg-info border border-secondary">flex-item</div>
+      <div class="p-2 bg-info border border-secondary">flex-item</div>
+    </div>
+
+    <div class="d-flex bg-secondary mb-3">
+      <div class="p-2 bg-info border border-secondary ml-auto">flex-item</div>
+      <div class="p-2 bg-info border border-secondary">flex-item</div>
+      <div class="p-2 bg-info border border-secondary">flex-item</div>
+    </div>
+
+  </div>
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

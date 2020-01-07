@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=E, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- LINK ARCHIVO CSS DE BOOTSTRAP -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <style>
+    .margen {
+      margin-top: 200px;
+    }
+
+    .titular {
+      border: 2px solid purple;
+      padding: 10px;
+      text-transform: uppercase;
+      margin-top: 10px;
+      text-align: center;
+    }
+  </style>
+
+  <title>Ordenamiento de Columnas</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <h3 class="titular">Orden de columnas</h3>
+    <hr class="margen">
+    <div class="row">
+      <div class="col-4 order-2" style="background-color: lightgray; border: 1px solid white;">
+        <p>columna-1</p>
+      </div>
+      <div class="col-4 order-first" style="background-color: lightgray; border: 1px solid white;">
+        <p>columna-2</p>
+      </div>
+      <div class="col-4 order-last" style="background-color: lightgray; border: 1px solid white;">
+        <p>columna-3</p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- LINK ARCHIVOS JS DE BOOTSTRAP -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

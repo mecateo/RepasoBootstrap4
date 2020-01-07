@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=º, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Componentes</title>
+
+</head>
+
+<body>
+  <div class="container">
+    <h3 class="titular">Formularios</h3>
+    <form class="formularioValidacion" novalidate>
+      <div class="form-row">
+        <div class="col-md-4 mb-3">
+          <label for="validacionNombre">Nombre</label>
+          <input type="text" class="form-control" id="validacionNombre" placeholder="Nombre" value="" required />
+          <div class="invalid-feedback">Rellene este campo</div>
+          <div class="valid-feedback">
+            Campo completado!
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <label for="validacionApellido">Apellido</label>
+          <input type="text" class="form-control" id="validacionApellido" placeholder="Apellido" value="" required />
+          <div class="invalid-feedback">Rellene este campo</div>
+          <div class="valid-feedback">
+            Campo completado!
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <label for="validacionUsuario">Usuario</label>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="inputGroupPrepend">@</span>
+            </div>
+            <input type="text" class="form-control" id="validacionUsuario" placeholder="Usuario"
+              aria-describedby="inputGroupPrepend" required />
+            <div class="invalid-feedback">Rellene este campo</div>
+            <div class="valid-feedback">
+              Campo completado!
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="btn btn-primary" type="submit">Enviar</button>
+    </form>
+    <hr class="margen" />
+  </div>
+  <!-- ------------------Optional JavaScript------------------ -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <!-- -------------------- -->
+  <!-- SCRIPT PARA VALIDACION -->
+  <!-- -------------------- -->
+
+  <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function () {
+      "use strict";
+      window.addEventListener(
+        "load",
+        function () {
+          var forms = document.getElementsByClassName("formularioValidacion");
+          var validation = Array.prototype.filter.call(forms, function (form) {
+            form.addEventListener(
+              "submit",
+              function (event) {
+                if (form.checkValidity() === false) {
+                  event.preventDefault();
+                  event.stopPropagation();
+                }
+                form.classList.add("was-validated");
+              },
+              false
+            );
+          });
+        },
+        false
+      );
+    })();
+  </script>
+</body>
+
+</html>

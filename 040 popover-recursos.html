@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=º, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Componentes</title>
+
+</head>
+
+<body>
+  <div class="container">
+    <h3 class="titular">Formularios</h3>
+    <button class="btn btn-lg btn-danger" data-toggle="popover" title="Titulo para popover"
+      data-content="Esto es un contenido de ejemplo para el popover">Click
+      Aquí</button>
+    <hr>
+    <hr>
+    <button class="btn btn-lg btn-secondary" data-container="body" data-toggle="popover" data-placement="top"
+      title="Titulo para popover" data-content="Esto es un contenido de ejemplo para el popover"
+      data-trigger="focus">Click
+      Aquí</button>
+
+  </div>
+  <!-- ------------------Optional JavaScript------------------ -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <!-- -------------------- -->
+  <!-- SCRIPT PARA POPOVER -->
+  <!-- -------------------- -->
+
+  <script>
+    $(document).ready(function () {
+      $('[data-toggle="popover"]').popover();
+    });
+  </script>
+</body>
+
+</html>
